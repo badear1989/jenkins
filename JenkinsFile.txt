@@ -6,5 +6,9 @@ pipeline {
                 sh 'mvn --version'
             }
         }
+        
+        stage('echo'){
+        echo 'Build has been completed!!'
+        }
     }
 }
