@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                echo '---------------------------------------------------Build step.---------------------------------------------------'
             }
         }       
         stage('echo'){
             steps{
-                echo 'Build has been completed!'
+                echo '---------------------------------------------------Build has been completed!---------------------------------------------------'
             }   
         }
     }
