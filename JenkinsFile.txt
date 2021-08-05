@@ -8,7 +8,9 @@ pipeline {
         }
         
         stage('echo'){
-        echo 'Build has been completed!!'
+            steps{
+                echo 'Build has been completed!!'
+            }   
         }
     }
 }
